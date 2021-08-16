@@ -1,0 +1,70 @@
+name: ExtraCMDS
+author: I5MS
+description: ExtraCMDS
+version: 1.0.1
+api-version: 1.13
+main: com.i5ms.extracmds.Main
+commands:
+  clear:
+    description: Clear player's inventory!
+    usage: /<command> <player>
+    aliases: []
+  feed:
+    description: Feed player.
+    usage: /<command> <player>
+    aliases: []
+  fly:
+    description: Make player fly.
+    usage: /<command> <player>
+    aliases: []
+  god:
+    description: Become invincible.
+    usage: /<command> <player>
+    aliases: []
+  heal:
+    description: Heal player.
+    usage: /<command> <player>
+    aliases: []
+  ping:
+    description: Pong!
+    usage: /<command>
+    aliases: []
+  skull:
+    description: Get skull of player!
+    usage: /<command> <player>
+    aliases: []
+permissions:
+  extracmds.*:
+    children:
+      extracmds.clear: true
+      extracmds.feed: true
+      extracmds.fly: true
+      extracmds.god: true
+      extracmds.heal: true
+      extracmds.clear.others: true
+      extracmds.feed.others: true
+      extracmds.fly.others: true
+      extracmds.god.others: true
+      extracmds.heal.others: true
+      extracmds.ping: true
+      extracmds.skull: true
+  extracmds.clear:
+    default: op
+  extracmds.feed:
+    default: op
+  extracmds.god:
+    default: op
+  extracmds.heal:
+    default: op
+  extracmds.clear.others:
+    default: op
+  extracmds.feed.others:
+    default: op
+  extracmds.god.others:
+    default: op
+  extracmds.heal.others:
+    default: op
+  extracmds.ping:
+    default: not op
+  extracmds.skull:
+    default: op
