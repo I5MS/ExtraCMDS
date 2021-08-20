@@ -1,10 +1,14 @@
 name: ExtraCMDS
 author: I5MS
 description: ExtraCMDS
-version: 1.0.1
+version: 1.0.3
 api-version: 1.13
 main: com.i5ms.extracmds.Main
 commands:
+  vanish:
+    description: Clear player's inventory!
+    usage: /<command> <player>
+    aliases: [ ]
   clear:
     description: Clear player's inventory!
     usage: /<command> <player>
@@ -48,6 +52,8 @@ permissions:
       extracmds.heal.others: true
       extracmds.ping: true
       extracmds.skull: true
+      extracmds.vanish: true
+      extracmds.vanish.others: true
   extracmds.clear:
     default: op
   extracmds.feed:
@@ -67,4 +73,8 @@ permissions:
   extracmds.ping:
     default: not op
   extracmds.skull:
+    default: op
+  extracmds.vanish:
+    default: op
+  extracmds.vanish.others:
     default: op
